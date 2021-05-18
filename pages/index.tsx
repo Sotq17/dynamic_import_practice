@@ -11,12 +11,12 @@ import ListSecondary from '../components/ListSecondary'
 
 
 const IndexPage = () => {
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(true);
   return (
     <Layout title="Home | Next.js + TypeScript Example">
       <h1>Hello Next.js 👋</h1>
       <button onClick={() => setToggle(!toggle)}>
-        Toggle Hello Component
+        Toggle Component
       </button>
       {toggle ?  <List /> : <ListSecondary />}
     </Layout>
