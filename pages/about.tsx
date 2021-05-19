@@ -3,12 +3,8 @@ import Layout from '../components/Layout'
 
 import dynamic from "next/dynamic";
 
-// import List from '../components/List'
-// import ListSecondary from '../components/ListSecondary'
 const List = dynamic(() => import( '../components/List'))
 const ListSecondary = dynamic(() => import( '../components/ListSecondary'), { loading: () => <p>loading...</p> })
-
-
 
 const AboutPage = () => {
   const [toggle, setToggle] = useState(true);
