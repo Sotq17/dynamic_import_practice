@@ -6,7 +6,7 @@ import dynamic from "next/dynamic";
 // import List from '../components/List'
 // import ListSecondary from '../components/ListSecondary'
 const List = dynamic(() => import( '../components/List'))
-const ListSecondary = dynamic(() => import( '../components/ListSecondary'))
+const ListSecondary = dynamic(() => import( '../components/ListSecondary'), { loading: () => <p>loading...</p> })
 
 
 
